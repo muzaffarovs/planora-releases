@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Planora — your day and your money, in one place</title>
-<meta name="description" content="Planora is a daily and weekly planner with a budget that tells you what's safe to spend, and reminders in Telegram. Free for Windows; Android coming soon.">
+<meta name="description" content="Planora is a daily and weekly planner with a budget that tells you what's safe to spend, and reminders in Telegram. Free for Windows and Android.">
 <meta property="og:title" content="Planora — your day and your money, in one place">
 <meta property="og:description" content="Planner, budget and Telegram reminders. Free for Windows.">
 <meta property="og:image" content="https://planora.muzaffarov.uz/assets/today-light.webp">
@@ -204,7 +204,7 @@ footer a { color: var(--text2); text-decoration: none; }
         <span data-t="open_bot">Use it in Telegram</span>
       </a>
     </div>
-    <p class="meta"><span class="ver" data-t="meta">Free · Windows 10 and 11 · updates itself</span> · <span data-t="android_soon">Android app coming soon</span></p>
+    <p class="meta"><span class="ver" data-t="meta">Free · Windows 10 and 11 · updates itself</span> · <a href="#android" data-t="android_soon">Also on Android</a></p>
     <div class="shot glass">
       <div class="chrome" aria-hidden="true"><i></i><i></i><i></i></div>
       <picture>
@@ -234,12 +234,14 @@ footer a { color: var(--text2); text-decoration: none; }
           <div class="grow"></div>
           <a class="btn btn-soft btn-small" href="https://t.me/planorauzbot" target="_blank" rel="noopener">@planorauzbot</a>
         </div>
-        <div class="platform glass">
+        <div class="platform glass" id="android">
           <div class="icon" style="background:#3DDC84"><svg width="24" height="24" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M17.5 9.3 19 6.7a.5.5 0 0 0-.9-.5l-1.5 2.6A9.6 9.6 0 0 0 12 7.8c-1.7 0-3.3.4-4.6 1L5.9 6.2a.5.5 0 1 0-.9.5l1.5 2.6A8.6 8.6 0 0 0 2 16h20a8.6 8.6 0 0 0-4.5-6.7zM7.5 13.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2zm9 0a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/></svg></div>
-          <span class="badge" data-t="soon">Coming soon</span>
           <h3>Android</h3>
-          <p data-t="android_p">The same account in your pocket. Use the Telegram bot until it's out; your data will be there.</p>
+          <p data-t="android_p">The same account in your pocket: your day, your budget and focus, with reminders on the phone. Works offline.</p>
           <div class="grow"></div>
+          <a class="btn btn-soft btn-small" href="https://github.com/muzaffarovs/planora-releases/releases/download/android-v1.0.0/Planora.apk"><span data-t="android_dl">Download for Android</span></a>
+          <span class="small" data-t="android_note">Android 7 or newer · 5 MB · sign in with Telegram</span>
+        </div>
           <span class="small" data-t="android_note">Start the bot to hear when it launches.</span>
         </div>
       </div>
@@ -324,7 +326,9 @@ footer a { color: var(--text2); text-decoration: none; }
       <details class="glass"><summary data-t="q1">Windows says "Windows protected your PC". Is it safe?</summary>
         <p data-t="a1">Planora is new and its installer isn't code-signed yet, so Windows doesn't recognise it. Click <kbd>More info</kbd>, then <kbd>Run anyway</kbd>. Each release lists the installer's SHA-256 on GitHub if you'd like to check the file.</p></details>
       <details class="glass"><summary data-t="q2">Is it free?</summary>
-        <p data-t="a2">Yes. The Windows app and the Telegram bot are free.</p></details>
+        <p data-t="a2">Yes. The Windows app, the Android app and the Telegram bot are free.</p></details>
+      <details class="glass"><summary data-t="q6">How do I install the Android app?</summary>
+        <p data-t="a6">Download the file on your phone and open it. Android asks you to allow installs from your browser the first time: that's normal for apps from outside the Play Store. Then open Planora and continue with Telegram. It tells you when there's a new version.</p></details>
       <details class="glass"><summary data-t="q3">How do updates work?</summary>
         <p data-t="a3">Planora checks for new versions by itself and downloads them in the background. When one is ready, Settings shows "Restart to update".</p></details>
       <details class="glass"><summary data-t="q4">Do I need the bot to use the app?</summary>
@@ -351,12 +355,12 @@ const UZ = {
   h1: "Kuningiz va pulingiz bir joyda, tartib bilan.",
   lede: "Bugun va haftani haqiqiy vaqt jadvalida rejalang, pul sarflashdan oldin qancha bemalol ishlatish mumkinligini biling, eslatmalarni esa Telegram'da, kompyuter va telefoningizda oling.",
   dl_windows: "Windows uchun yuklab olish", open_bot: "Telegram'da ishlatish",
-  meta: "Bepul · Windows 10 va 11 · o'zi yangilanadi", android_soon: "Android ilovasi tez orada",
+  meta: "Bepul · Windows 10 va 11 · o'zi yangilanadi", android_soon: "Android uchun ham bor",
   get_h: "Planora'ni oling", get_p: "Bitta hisob, Telegram orqali kirasiz. Istalgan qurilmada boshlang, hammasi sinxron.",
   win_p: "To'liq rejalashtiruvchi: vaqt jadvali, hafta, byudjet, jamg'arma maqsadlari va kompyuterdagi eslatmalar. Internetsiz ham ishlaydi.",
   dl_short: "Yuklab olish", tg_p: "Vazifa qo'shing, xarajat yozing va barcha eslatmalarni telefoningizda oling, hoziroq. Hech narsa o'rnatish shart emas.",
-  soon: "Tez orada", android_p: "O'sha hisob cho'ntagingizda. Chiqguncha Telegram botdan foydalaning, ma'lumotlaringiz saqlanib turadi.",
-  android_note: "Chiqqanini bilish uchun botni ishga tushiring.",
+  soon: "Tez orada", android_p: "O'sha hisob cho'ntagingizda: kuningiz, byudjetingiz va fokus, eslatmalar telefonda. Internetsiz ham ishlaydi.",
+  android_note: "Android 7 yoki yangisi · 5 MB · Telegram bilan kirish", android_dl: "Android uchun yuklab olish",
   f1_k: "Bugun", f1_h: "Hozir nima va keyin nima, ko'rinib turadi.",
   f1_p: "Kuningiz vaqt jadvali ko'rinishida, bloklarni sichqoncha bilan surasiz. Vaqtsiz vazifalar va bugungi to'lovlar tepada turadi.",
   f1_1: "\"Gym tomorrow 18:30 !1h\" deb yozing, eslatma bilan rejalashtiriladi", f1_2: "Blokni sudrab ko'chiring, chetidan tortib uzaytiring",
@@ -374,7 +378,8 @@ const UZ = {
   s3_h: "Maxfiylik asosida", s3_p: "Har bir hisob ma'lumoti alohida saqlanadi. Hisobni istalgan payt /deleteme bilan o'chiring.",
   q_h: "Savollar", q1: "Windows \"Windows protected your PC\" deyapti. Xavfsizmi?",
   a1: "Planora yangi va o'rnatuvchisi hali raqamli imzolanmagan, shuning uchun Windows uni tanimaydi. <kbd>More info</kbd>, so'ng <kbd>Run anyway</kbd> tugmasini bosing. Har bir relizda GitHub'da o'rnatuvchining SHA-256 qiymati bor.",
-  q2: "Bepulmi?", a2: "Ha. Windows ilovasi ham, Telegram bot ham bepul.",
+  q2: "Bepulmi?", a2: "Ha. Windows ilovasi, Android ilovasi va Telegram bot bepul.",
+  q6: "Android ilovasini qanday o'rnataman?", a6: "Faylni telefoningizga yuklab oling va oching. Birinchi marta Android brauzerdan o'rnatishga ruxsat so'raydi: Play Market'dan tashqari ilovalar uchun bu odatiy holat. So'ng Planora'ni oching va Telegram bilan davom eting. Yangi versiya chiqsa, ilova o'zi xabar beradi.",
   q3: "Yangilanishlar qanday ishlaydi?", a3: "Planora yangi versiyani o'zi tekshiradi va fonda yuklab oladi. Tayyor bo'lganda Settings'da \"Restart to update\" chiqadi.",
   q4: "Ilova uchun bot shartmi?", a4: "Yo'q. Planora'ni bitta kompyuterda hisobsiz ishlatish mumkin. Telegram bilan kirish telefonda eslatmalar va bir nechta kompyuterda sinxronlashni qo'shadi.",
   q5: "Qanday o'chiraman?", a5: "Windows Settings → Apps → Installed apps → Planora → Uninstall. Hisobingiz qoladi; uni ilovadagi Account sahifasidan yoki botda /deleteme bilan o'chiring.",
