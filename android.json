@@ -1,6 +1,6 @@
 {
-  "version": "1.0.0",
-  "url": "https://github.com/muzaffarovs/planora-releases/releases/download/android-v1.0.0/Planora.apk",
-  "sha256": "dce8453140e7b21d54e58e9d8e4232e246645c8efc358070560f2ca4bc17cb86",
-  "notes": "First Android release: your day, budget and focus, on the same account, with reminders on the phone. Works offline."
+  "version": "1.1.0",
+  "url": "https://github.com/muzaffarovs/planora-releases/releases/download/android-v1.1.0/Planora.apk",
+  "sha256": "c7428cc0aa779abe090c70afb2439323dd16fda639a9d0ad0b3057636db17252",
+  "notes": "Payment apps and commissions, a built-in IELTS plan with reminders, and everything from the latest desktop version."
 }
