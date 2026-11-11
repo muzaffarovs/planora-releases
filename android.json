@@ -1,6 +1,6 @@
 {
-  "version": "1.2.0",
-  "url": "https://github.com/muzaffarovs/planora-releases/releases/download/android-v1.2.0/Planora.apk",
-  "sha256": "cb052cf1373af965984813b76fef4b352e4989c985adb8e0e2b3349c9f1b52b6",
-  "notes": "A built-in IELTS workspace: Listening, Reading and Writing exercises with instant marking, recordings, timed essays and model answers."
+  "version": "1.3.0",
+  "url": "https://github.com/muzaffarovs/planora-releases/releases/download/android-v1.3.0/Planora.apk",
+  "sha256": "c8a0d4d240f5dca94ce40f6386383827ec1d5a616d5e86c360de6c9bafe9b8d2",
+  "notes": "Prayer reminders: Bomdod, Peshin, Asr, Shom and Xufton with official Uzbek times, on their own notification channel, plus today's times on the Today screen."
 }
