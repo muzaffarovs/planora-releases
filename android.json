@@ -1,6 +1,6 @@
 {
-  "version": "1.3.0",
-  "url": "https://github.com/muzaffarovs/planora-releases/releases/download/android-v1.3.0/Planora.apk",
-  "sha256": "c8a0d4d240f5dca94ce40f6386383827ec1d5a616d5e86c360de6c9bafe9b8d2",
-  "notes": "Prayer reminders: Bomdod, Peshin, Asr, Shom and Xufton with official Uzbek times, on their own notification channel, plus today's times on the Today screen."
+  "version": "1.4.0",
+  "url": "https://github.com/muzaffarovs/planora-releases/releases/download/android-v1.4.0/Planora.apk",
+  "sha256": "f8285bf776df5c66b74ce6ad99055e7157de6defea5f919e087e0233713a6253",
+  "notes": "Week in review, habits with streaks, budget forecast, split bills, IELTS Speaking (record your answers, get feedback), mistake review, Qibla and Ramadan reminders."
 }
